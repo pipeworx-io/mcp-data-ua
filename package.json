@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-data-ua",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Ukraine Open Data (data.gov.ua) CKAN MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-data-ua": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "data-ua"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-data-ua.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/data-ua",
   "pipeworx": {
-    "sourceHash": "v1-e66046f6115b6d7adb2cf23ae6a7d7b1d9e3c88d096f910bcea320ff0a2dd09b",
-    "sourceCommit": "01241619b78233fd55d0e3612331499a63f03ae7"
+    "mode": "gateway",
+    "slug": "data-ua",
+    "gatewaySlug": "data-ua",
+    "sourceHash": "v1-a2eb54fb09aaea364202bfd4f7c44656e6c048dd16a371213ab9fd22e36627fb",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
