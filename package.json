@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-data-ua",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Ukraine Open Data (data.gov.ua) CKAN MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "data-ua",
     "gatewaySlug": "data-ua",
-    "sourceHash": "v1-a2eb54fb09aaea364202bfd4f7c44656e6c048dd16a371213ab9fd22e36627fb",
-    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
+    "sourceHash": "v1-26dabbdc587fe768b3e31b2f10b153fbf30311c001de91121eba341d815935fa",
+    "sourceCommit": "5ce1a05186d46479e23865c66bdb8579d8de445e"
   }
 }
